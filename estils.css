@@ -11,12 +11,14 @@ body {
     display: flex;
     position: sticky;
     border-radius: 20px;
-    background-color: rgb(226, 223, 223);
+    background-color: rgb(153, 122, 18);
     padding: 5px 10px;
     max-width: 95%;
     margin-top: 20px;
     align-items: center;
     flex-direction:row;
+    box-shadow:
+0px 2px 2px 7px #974915;
     
 }
 
@@ -27,6 +29,7 @@ body {
     max-width:55%;
     cursor: pointer;
     text-decoration: none; /*Quita decoraciones*/       
+    text-shadow:-1px 5px 3px #3f3c3c;
 }
 /*Estilos para las a*/
 .roboto-uniquifier {
@@ -41,6 +44,7 @@ body {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
+  
 }
 
 
