@@ -26,9 +26,23 @@ body {
     padding: 4px 200px;
     max-width:55%;
     cursor: pointer;
-    text-decoration: none; /*Quita decoraciones*/
-        
+    text-decoration: none; /*Quita decoraciones*/       
 }
+/*Estilos para las a*/
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  font-size: 3em;
+}
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /*Comenzamos con los elementos de la pàgina principal*/
 .first-section {
