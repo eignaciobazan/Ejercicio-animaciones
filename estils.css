@@ -3,22 +3,31 @@ body {
   justify-items: center;
   margin: 0;
   font-family: Arial, sans-serif;
-  
+  min-height: 200vh;
+  background-image: url("assets/IMG/2yc41cpqojd41.png");
+  background-size: cover;      /* hace que cubra toda la pantalla */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* para que el fondo NO se mueva */
   
 }
 
+
+
 .estilos{
     display: flex;
+    top: 10px; /*Importante darle de donde comenzar a la barra*/
     position: sticky;
     border-radius: 20px;
-    background-color: rgb(153, 122, 18);
+    background-color: rgba(153, 122, 18, 0.5);
     padding: 5px 10px;
     max-width: 95%;
     margin-top: 20px;
     align-items: center;
     flex-direction:row;
-    box-shadow:
-0px 2px 2px 7px #974915;
+    box-shadow:0px 2px 2px 7px #974915;
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);
     
 }
 
@@ -59,4 +68,112 @@ body {
   gap: 40px;
   max-width: 1264px;
   margin: 0 auto;
+}
+
+.hero {
+  margin-top: 10px;
+  min-height: 70vh;
+  background-image: url("assets/IMG/minecraft-blocks-collection-fjsaax3f2xk5c5kf-fjsaax3f2xk5c5kf.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;   /* Coloca elementos uno debajo del otro */
+  justify-content: center;  /* Centra verticalmente */
+  align-items: center;      /* Centra horizontalmente */
+  text-align: center;
+  color: rgb(246, 240, 240);
+  font-size: 2.5rem;
+  font-family: "Press Start 2P"; /* Fuente estilo videojuego */
+}
+
+.btn-hero {
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #34c924;
+  border-radius: 15%;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.6s ease;
+}
+.btn-hero:hover {
+  background: #b4da09;
+}
+
+
+/*Segunda parte de la primera parte de la página*/
+/* ---------------- TARGETES ---------------- */
+.cards {
+  display: flex;           /* Las coloca en fila */
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+
+.card {
+  width: 250px;
+  background: #222;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  transition: 
+    transform 0.3s ease-out,
+    box-shadow 0.3s ease-in-out,
+    background 0.3s linear;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.4s ease-in-out; /* para cambiar imagen */
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0px 10px 20px black;
+  background: #333;
+}
+
+/* ---------------- MENÚ SECUNDARIO ---------------- */
+.submenu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 18px;
+  transition: 
+    color 0.3s ease,
+    letter-spacing 0.3s ease-in-out;
+}
+
+.submenu a:hover {
+  color: #55ff55;
+  letter-spacing: 2px; /* EFECTO REQUERIDO */
+}
+
+/*------Imagen final-----*/
+.gato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.gato img{
+  box-shadow:0px 2px 12px 10px #d4e114;
+}
+.gato:hover img{
+  transform: scale(1.10); /*Aumentamos el tamaño*/
+  transition: transform 0.5s ease-in-out;
+  
 }
