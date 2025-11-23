@@ -206,6 +206,24 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 /*Fin-Fuentes*/
 
 .titulo-último{
@@ -254,6 +272,7 @@ wrap;
   max-width: 25%;
   align-items: center;
   background-image: url("assets/IMG/1280x720-minecraft-an8pm9v8gg194ngb.jpg");
+  transition: transform 0.8s ease-in-out;
 }
 .cajitas h1{
   line-height: 60px;
@@ -265,22 +284,38 @@ wrap;
   max-width: 25%;
   gap: 10px;
   flex-direction: row-reverse;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .cajitas h2{
   font-weight: bold;
   line-height: 100%;
+  font-size: 1.5rem;
+  text-align:left;
+  letter-spacing: 2px;
+  color: rgb(16, 15, 15);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
+
+.cajitas h2:hover{
+  background-color: #e5f1e7;
+  color: rgb(24, 24, 24);
+}
+
 
 .cajitas:hover{
   transform: scale(2,2);
+  transform: rotate(20deg) scale(1.1);
 }
 
 .cajitas h1 img{
   max-width: 25%;
   margin-top: 0px;
   display: flex;
-
-
 }
+
+
+
+
 
