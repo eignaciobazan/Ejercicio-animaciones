@@ -256,8 +256,15 @@ wrap;
   background-image: url("assets/IMG/1280x720-minecraft-an8pm9v8gg194ngb.jpg");
 }
 .cajitas h1{
+  line-height: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: overline underline;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 25%;
+  gap: 10px;
+  flex-direction: row-reverse;
 }
 
 .cajitas h2{
@@ -267,5 +274,13 @@ wrap;
 
 .cajitas:hover{
   transform: scale(2,2);
+}
+
+.cajitas h1 img{
+  max-width: 25%;
+  margin-top: 0px;
+  display: flex;
+
+
 }
 
