@@ -58,17 +58,7 @@ body {
 
 
 /*Comenzamos con los elementos de la pàgina principal*/
-.first-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px 20px;
-  gap: 40px;
-  max-width: 1264px;
-  margin: 0 auto;
-}
+
 
 .hero {
   margin-top: 10px;
@@ -130,7 +120,7 @@ body {
 .card img {
   width: 100%;
   border-radius: 10px;
-  transition: opacity 0.4s ease-in-out; /* para cambiar imagen */
+  transition: opacity 0.4s ease-in-out; 
 }
 
 .card:hover {
@@ -149,11 +139,28 @@ body {
 
 .submenu a {
   text-decoration: none;
-  color: #eee;
-  font-size: 18px;
+  color: #242726;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow:-6px -2px 3px #837c7c;
   transition: 
     color 0.3s ease,
     letter-spacing 0.3s ease-in-out;
+}
+
+
+
+.submenu span {
+  font-size: 32px;
+  vertical-align: middle; /* Alinea el icono con el texto */
+  color: #131414;
+  text-shadow:-6px -2px 3px #837c7c;
+  transition: 
+    color 0.3s ease;
+}
+.submenu a span:hover {
+  color: #202ddd;
+  scale: (1,10);
 }
 
 .submenu a:hover {
@@ -177,3 +184,88 @@ body {
   transition: transform 0.5s ease-in-out;
   
 }
+
+/*-----Galeria------*/
+
+/*-----último ------*/
+/*Fuentes*/
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+/*Fin-Fuentes*/
+
+.titulo-último{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.titulo-último h1{
+  padding: 4px 20px;
+  color: white;
+  text-decoration: overline underline;
+  margin-top: 50px;
+  letter-spacing: 0px;
+   transition: color 0.2s ease-in-out letter-spacing 0.5s ease-in-out;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 4rem;
+  background-image: url("assets/IMG/Captura\ de\ pantalla\ 2025-11-22\ 062140.png");
+  }
+.titulo-último h1:hover{
+  color: #1bbc41;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+.cajas-último{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15%;
+  padding: auto;
+  margin-bottom: 50px;
+  display: flex;
+flex-wrap:
+wrap;
+}
+
+.cajitas{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #797e7e;
+  color: white;
+  padding: auto;
+  max-width: 25%;
+  align-items: center;
+  background-image: url("assets/IMG/1280x720-minecraft-an8pm9v8gg194ngb.jpg");
+}
+.cajitas h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: overline underline;
+}
+
+.cajitas h2{
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.cajitas:hover{
+  transform: scale(2,2);
+}
+
