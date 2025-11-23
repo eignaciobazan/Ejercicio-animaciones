@@ -29,6 +29,7 @@ body {
     backdrop-filter: blur(10px);  
     -webkit-backdrop-filter: blur(10px);
     
+    
 }
 
 .estilos a{
@@ -205,6 +206,7 @@ body {
       font-size: 2rem;
       font-weight: bold;
       max-width: 85%;
+      
     }
 
     .cards{
@@ -222,7 +224,19 @@ body {
     .gato img{
       max-width: 90%;
     }
-     
+
+    .btn-hero{
+      max-width: 40%;
+      
+    }
+
+    .btn-hero h1{
+      font-size: 0.5rem;
+    } 
+    
+    .hero button{
+      margin-top: 10%;
+    }
   }
 
 
