@@ -13,13 +13,6 @@ body {
 }
 
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
 
 .estilos{
     display: flex;
@@ -286,6 +279,37 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.playwrite-us-trad-guides-regular {
+  font-family: "Playwrite US Trad Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-uniquifier {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
 
 /*Fin-Fuentes*/
 
@@ -390,10 +414,13 @@ wrap;
 }
 
 .boton{
-  padding: 15px 30px;
+  padding: 0px 30px;
+  width: calc(100%-60%);
   background-color: #34c924;
   border-radius: 10%;
   display: flex;
+  min-width: 10%;
+  
   
   
   
@@ -407,13 +434,16 @@ wrap;
   cursor: pointer;
 }
 .boton span{
+  margin-top: 4%;
   font-size: 32px;
   vertical-align: middle; /* Alinea el icono con el texto */
   color: #131414;
-  font-optical-sizing: 24;
-  font-weight: 700;
-  fill: 2;
-  color: white;
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 700,
+    "GRAD" 0,
+    "opsz" 24;
+  color: rgb(216, 217, 215);
 }
 
 .boton:hover{
