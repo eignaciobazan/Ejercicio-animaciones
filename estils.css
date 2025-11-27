@@ -308,7 +308,29 @@ body {
   font-weight: weight;
   font-style: normal;
 }
+.robot{
+  display: flex;
+  max-width: 25%;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
 
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
 
 
 /*Fin-Fuentes*/
@@ -320,11 +342,11 @@ body {
 }
 
 .titulo-último h1{
-  padding: 4px 20px;
+  padding: 4rem 10rem;
   color: white;
   text-decoration: overline underline;
-  margin-top: 50px;
-  letter-spacing: 0px;
+  margin-top: 5rem;
+  letter-spacing: 0.1rem;
    transition: color 0.2s ease-in-out letter-spacing 0.5s ease-in-out;
   font-family: 'Courier New', Courier, monospace;
   line-height: 4rem;
@@ -332,7 +354,7 @@ body {
   }
 .titulo-último h1:hover{
   color: #1bbc41;
-  letter-spacing: 3px;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   font-size: 2.6rem;
 }
@@ -340,10 +362,10 @@ body {
 .cajas-último{
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10rem;
   margin-top: 15%;
   padding: auto;
-  margin-bottom: 50px;
+  margin-bottom: 10rem;
   display: flex;
 flex-wrap:
 wrap;
@@ -352,7 +374,7 @@ wrap;
 .cajitas{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   background-color: #797e7e;
   color: white;
   padding: auto;
@@ -362,17 +384,17 @@ wrap;
   transition: transform 0.8s ease-in-out;
 }
 .cajitas h1{
-  line-height: 60px;
+  line-height: 6rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: overline underline;
   display: flex;
   align-items: center;
   justify-content: space-around;
   max-width: 25%;
-  gap: 10px;
+  gap: 0rem;
   flex-direction: row-reverse;
   font-size: 1.5rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.3rem;
 }
 
 .cajitas h2{
@@ -380,7 +402,7 @@ wrap;
   line-height: 100%;
   font-size: 1.5rem;
   text-align:left;
-  letter-spacing: 2px;
+  letter-spacing: 0.4rem;
   color: rgb(16, 15, 15);
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
@@ -398,7 +420,7 @@ wrap;
 
 .cajitas h1 img{
   max-width: 25%;
-  margin-top: 0px;
+  margin-top: 0rem;
   display: flex;
 }
 
@@ -406,15 +428,16 @@ wrap;
   padding: auto;
   display: flex;
   flex-direction: row;
-  gap: 300px;
+  gap: 20rem;
   justify-content: space-between;
-  margin-right: 50px;
+  margin-right: 2rem;
   
   
 }
 
 .boton{
-  padding: 0px 30px;
+  align-items: baseline;
+  padding: 0px 2rem;
   width: calc(100%-60%);
   background-color: #34c924;
   border-radius: 10%;
@@ -434,6 +457,7 @@ wrap;
   cursor: pointer;
 }
 .boton span{
+
   margin-top: 4%;
   font-size: 32px;
   vertical-align: middle; /* Alinea el icono con el texto */
