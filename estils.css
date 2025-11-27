@@ -310,12 +310,12 @@ body {
 }
 .robot{
   display: flex;
-  max-width: 25%;
-  flex-direction: column;
+  max-width: 65%;
+  flex-direction: row;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
   font-family: "Roboto", sans-serif;
-  
+  font-size: 2rem;
 }
 .roboto-light {
   font-family: "Roboto", sans-serif;
@@ -331,6 +331,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 50,
+  'opsz' 0
+}
+
 
 
 /*Fin-Fuentes*/
@@ -363,12 +372,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  margin-top: 15%;
+  margin-top: 3%;
   padding: auto;
   margin-bottom: 10rem;
   display: flex;
-flex-wrap:
-wrap;
+  flex-wrap: wrap;
 }
 
 .cajitas{
@@ -396,6 +404,7 @@ wrap;
   font-size: 1.5rem;
   letter-spacing: 0.3rem;
 }
+
 
 .cajitas h2{
   font-weight: bold;
@@ -443,8 +452,11 @@ wrap;
   border-radius: 10%;
   display: flex;
   min-width: 10%;
+  gap: 1rem;
   
-  
+.boton span.material-symbols-outlined {
+  vertical-align: baseline;
+}  
   
   
 }
@@ -457,7 +469,6 @@ wrap;
   cursor: pointer;
 }
 .boton span{
-
   margin-top: 4%;
   font-size: 32px;
   vertical-align: middle; /* Alinea el icono con el texto */
