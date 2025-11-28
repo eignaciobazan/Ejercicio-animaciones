@@ -331,15 +331,38 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 700,
-  'GRAD' 50,
-  'opsz' 0
+.icon{
+  display: flex;
+  align-items: center;
 }
 
+.icon span{
+  font-size: 3rem;
+  cursor: pointer;
+}
+.icon span:hover{
+  transform: scale(1,2);
+  
+}
+
+.icon2{
+  display: flex;
+  align-items: center;
+}
+
+.icon2 span{
+  margin-top: 0.5rem;
+  font-size: 3rem;
+}
+.icon3{
+  display: flex;
+  align-items: center;
+}
+
+.icon3 span{
+  margin-top: -1rem;
+  font-size: 3rem;
+}
 
 
 /*Fin-Fuentes*/
