@@ -325,10 +325,10 @@ body {
 }
 .robot{
   display: flex;
-  max-width: 65%;
+  max-width: 85%;
   flex-direction: row;
   align-items: center;
-  gap: 6rem;
+  gap: 4rem;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
 }
@@ -346,45 +346,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-.icon{
-  display: flex;
-  align-items: center;
-}
-
-.icon span{
-  font-size: 3rem;
-  cursor: pointer;
-}
-.icon span:hover{
-  transform: scale(1,2);
-  
-}
-
-.icon2{
-  display: flex;
-  align-items: center;
-}
-
-.icon2 span{
-  margin-top: 0.5rem;
-  font-size: 3rem;
-}
-.icon3{
-  display: flex;
-  align-items: center;
-}
-
-.icon3 span{
-  margin-top: -1rem;
-  font-size: 3rem;
-}
-
 .Box{
   display: flex;
-  
 }
 .Box span{
-  margin-top: 1.8rem;
+  font-size: 3rem;
+  margin-top: 2.6rem;
 }
 
 .Box1{
@@ -392,7 +359,8 @@ body {
   
 }
 .Box1 span{
-  margin-top: 1.9rem;
+  font-size: 3rem;
+  margin-top: 2.9rem;
 }
 
 .Box2{
@@ -400,7 +368,8 @@ body {
   
 }
 .Box2 span{
-  margin-top: 1.33rem;
+  font-size: 2.5rem;
+  margin-top: 2.33rem;
 }
 
 .material-symbols-outlined {
@@ -456,7 +425,7 @@ body {
   background-color: #797e7e;
   color: white;
   padding: auto;
-  max-width: 25%;
+  max-width: 55%;
   align-items: center;
   background-image: url("assets/IMG/1280x720-minecraft-an8pm9v8gg194ngb.jpg");
   transition: transform 0.8s ease-in-out;
@@ -507,7 +476,7 @@ body {
   padding: auto;
   display: flex;
   flex-direction: row;
-  gap: 20rem;
+  gap: 10rem;
   justify-content: space-between;
   margin-right: 2rem;
   
@@ -604,11 +573,28 @@ body {
     gap: 5rem;
     align-items: center;
   } 
+  .Box{
+  display: flex;
+}
+.Box span{
+  margin-top: 1.8rem;
+}
 
+.Box1{
+  display: flex;
+  
+}
+.Box1 span{
+  margin-top: 1.9rem;
+}
 
-
-
-
+.Box2{
+  display: flex;
+  
+}
+.Box2 span{
+  margin-top: 1.33rem;
+  }
 }
 
 
