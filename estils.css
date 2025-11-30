@@ -597,6 +597,128 @@ body {
   }
 }
 
+/*Galeria de animaciones*/
+/* Apartats separats */
+.apartat {
+  margin: 80px 0;
+  border-bottom: 1px solid #444;
+  padding-bottom: 40px;
+}
+
+/* ================================== */
+/* 1️⃣ LOADER PUR CSS (rotació)       */
+/* ================================== */
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #555;
+  border-top-color: #00eaff;
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+/* Rotació infinita */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================================== */
+/* 2️⃣ ANIMACIÓ PRINCIPAL              */
+/*    transform + opacity + colors    */
+/* ================================== */
+
+.anim-principal {
+  width: 120px;
+  height: 120px;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: #00b7ff;
+
+  /* Requisits professor */
+  animation: bounceAndSpin 3s ease-in-out infinite alternate;
+}
+
+/* Combina:
+   ✔ desplaçament (translateY)
+   ✔ rotació
+   ✔ opacitat
+   ✔ canvis de color
+*/
+@keyframes bounceAndSpin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+    background: #00b7ff;
+  }
+  50% {
+    transform: translateY(-40px) rotate(180deg);
+    opacity: 1;
+    background: #8fff3f;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 0.7;
+    background: #ff3f3f;
+  }
+}
+
+/* ================================== */
+/* 3️⃣ SCROLL REVEAL                  */
+/*    animation-timeline: view()      */
+/*    animation-range                 */
+/* ================================== */
+
+.reveal {
+  width: 80%;
+  margin: 60px auto;
+  padding: 40px;
+  background: #222;
+  border-radius: 12px;
+  opacity: 0; /* Apareixen amb scroll */
+
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  /* ANIMACIÓ LLIGADA AL SCROLL */
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+/* Moviment i aparició */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================== */
+/* 4️⃣ FALLBACK obligatori            */
+/*     si el navegador NO suporta     */
+/*     animation-timeline:view()      */
+/* ================================== */
+
+@supports not (animation-timeline: view()) {
+  .reveal {
+    /* Animació alternativa */
+    animation: fadeIn 1.5s ease forwards;
+  }
+}
+
+/* Animació fallback */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 
 
