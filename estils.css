@@ -379,6 +379,38 @@ body {
   font-size: 3rem;
 }
 
+.Box{
+  display: flex;
+  
+}
+.Box span{
+  margin-top: 1.8rem;
+}
+
+.Box1{
+  display: flex;
+  
+}
+.Box1 span{
+  margin-top: 1.9rem;
+}
+
+.Box2{
+  display: flex;
+  
+}
+.Box2 span{
+  margin-top: 1.33rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 50,
+  'opsz' 24
+}
+
 
 /*Fin-Fuentes*/
 
