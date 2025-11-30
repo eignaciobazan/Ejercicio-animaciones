@@ -190,7 +190,6 @@ body {
       margin-top: 50px;
       max-width: 95%;
       max-height: 40%;
-
     }
       
 
@@ -236,6 +235,22 @@ body {
     
     .hero button{
       margin-top: 10%;
+    }
+
+    .estilos{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 85%;
+      gap: 0.5rem;
+
+  
+    }
+     .estilos a{
+      max-width: 5rem;
+      font-size: 1rem;
+      max-width: 1rem;
+      
     }
   }
 
@@ -510,6 +525,59 @@ body {
   transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
+@media (max-width: 768px){
+  .titulo-último{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+  .titulo-último h1{
+    font-size: 1.2rem;
+    padding: 2rem 4rem;
+  }
+
+  .robot{
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .cajas-último{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+  }
+  .cajitas h1{
+    font-size: 1rem;
+    max-width: 90%;
+    gap: 0rem;
+  } 
+
+  .cajitas h2{
+    font-size: 1rem;
+    max-width: 90%;
+  } 
+  .cajas-último .cajitas{
+    max-width: 80%;
+  }
+
+  .botones-último{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+  } 
+
+
+
+
+
+}
 
 
 
