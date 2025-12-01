@@ -637,17 +637,9 @@ body {
   margin: 40px auto;
   border-radius: 20px;
   background: #00b7ff;
-
-  /* Requisits professor */
   animation: bounceAndSpin 3s ease-in-out infinite alternate;
 }
 
-/* Combina:
-   ✔ desplaçament (translateY)
-   ✔ rotació
-   ✔ opacitat
-   ✔ canvis de color
-*/
 @keyframes bounceAndSpin {
   0% {
     transform: translateY(0) rotate(0deg);
