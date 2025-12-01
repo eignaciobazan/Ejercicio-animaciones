@@ -605,9 +605,7 @@ body {
   padding-bottom: 40px;
 }
 
-/* ================================== */
-/* 1️⃣ LOADER PUR CSS (rotació)       */
-/* ================================== */
+/* LOADER PUR CSS (rotació)*/
 
 .loader {
   width: 50px;
@@ -616,7 +614,7 @@ body {
   border-top-color: #00eaff;
   border-radius: 50%;
   margin: 20px auto;
-  animation: spin 1s linear infinite;
+  animation: spin 6s linear infinite;
 }
 
 /* Rotació infinita */
@@ -626,10 +624,7 @@ body {
   }
 }
 
-/* ================================== */
-/* 2️⃣ ANIMACIÓ PRINCIPAL              */
-/*    transform + opacity + colors    */
-/* ================================== */
+/* ANIMACIÓ PRINCIPAL*/
 
 .anim-principal {
   width: 120px;
@@ -658,11 +653,7 @@ body {
   }
 }
 
-/* ================================== */
-/* 3️⃣ SCROLL REVEAL                  */
-/*    animation-timeline: view()      */
-/*    animation-range                 */
-/* ================================== */
+/* SCROLL REVEAL*/
 
 .reveal {
   width: 80%;
@@ -671,12 +662,9 @@ body {
   background: #222;
   border-radius: 12px;
   opacity: 0; /* Apareixen amb scroll */
-
   animation-name: slideUp;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-
-  /* ANIMACIÓ LLIGADA AL SCROLL */
   animation-timeline: view();
   animation-range: entry 0% cover 60%;
 }
@@ -693,11 +681,7 @@ body {
   }
 }
 
-/* ================================== */
-/* 4️⃣ FALLBACK obligatori            */
-/*     si el navegador NO suporta     */
-/*     animation-timeline:view()      */
-/* ================================== */
+/*  FALLBACK obligatori*/
 
 @supports not (animation-timeline: view()) {
   .reveal {
