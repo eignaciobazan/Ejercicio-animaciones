@@ -605,9 +605,9 @@ body {
   padding-bottom: 40px;
 }
 
-/* ================================== */
-/* 1️⃣ LOADER PUR CSS (rotació)       */
-/* ================================== */
+
+/* 1 LOADER PUR CSS (rotació)       */
+
 
 .loader {
   width: 50px;
@@ -626,10 +626,10 @@ body {
   }
 }
 
-/* ================================== */
-/* 2️⃣ ANIMACIÓ PRINCIPAL              */
+
+/*  ANIMACIÓ PRINCIPAL              */
 /*    transform + opacity + colors    */
-/* ================================== */
+
 
 .anim-principal {
   width: 120px;
@@ -666,11 +666,11 @@ body {
   }
 }
 
-/* ================================== */
-/* 3️⃣ SCROLL REVEAL                  */
+
+/*  SCROLL REVEAL                  */
 /*    animation-timeline: view()      */
 /*    animation-range                 */
-/* ================================== */
+
 
 .reveal {
   width: 80%;
@@ -701,11 +701,11 @@ body {
   }
 }
 
-/* ================================== */
-/* 4️⃣ FALLBACK obligatori            */
+
+/* 4 FALLBACK obligatori            */
 /*     si el navegador NO suporta     */
 /*     animation-timeline:view()      */
-/* ================================== */
+
 
 @supports not (animation-timeline: view()) {
   .reveal {
